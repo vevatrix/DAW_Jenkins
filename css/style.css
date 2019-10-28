@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 226, 136);
+}
+
+#contenedor {
+  display: grid;
+  width:100%;
+
+  margin:none;
+  grid-template-columns: 1fr 20%;
+  grid-template-rows: 15% auto auto auto;
+  grid-template-areas: "header header"
+                        "cuerpo menu"
+                        "cuerpo menu"
+                        "footer footer";
+}
+  
+#cabecera { 
+  grid-area: header;
+  padding:1%;
+  background-image: url('../image/cat_header.jpg');
+  margin:2px;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+#menu { 
+  grid-area: menu;
+  padding:2%;
+  margin:5px;
+  text-align: center;
+  border-left: 5px solid blue;
+}
+
+#footer { 
+  grid-area: footer;
+  text-align: center;
+  padding: 2%;
+  margin:5px;
+  background-color: blue;
+  color: beige;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 5px solid cadetblue;
+}
+
+#footer p{
+  margin-top: 3%;
+}
+
+#contenedor_form{
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.etiqueta_campo{
+  display: block;
+  margin: 4%;
+  width: 70%;
+}
+
+.etiqueta{
+  font-size: 26px;
+  width: 30%;
+  font-weight: bold;
+}
+
+.campo{
+  font-size: 25px;
+  width: 50%;
+  float: right;
+}
+
+.caja_botones{
+  margin:0 auto;
+  margin: 3%;
+  width: 100%;
+}
+
+.boton{
+  font-size: 30px;
+  float:left;
+  margin:3%;
+  height: 50px;
+  width: 30%;
+  color: white;
+  background-color: darkgreen;
+  font-weight: bold;
+}
+
+#chb_recordar{
+  float: right;
+  width: 10%;
+  height: 30px;
+}
+
+.enlaces_menu{
+  padding-top: 15%;
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+  margin:2%;
+  color: blue;
+  font-weight: bold;
+}
+
+#img_contenedor{
+  background-image: url(../image/cat_news.jpg);
+  width: 30%;
+  height: 300px;
+  background-repeat: no-repeat;
+  float: left;
+  background-size: contain;
+  margin-left: 3%;
+  margin-top: 3%;
+  display: inline;
+}
+
+#noticia{
+  background-color: rgb(233, 226, 136);
+  padding: 6%;
+  grid-area: cuerpo;
+  font-size: 15px;
+  margin:5px;
+  text-align: justify;
+
+}
+
+#noticia p{
+  font-size: 28px;
+  color: indigo;
+  padding-left: 35%;
+}
+
+#noticia_form{
+  background-color:  rgb(233, 226, 136);
+  grid-area:cuerpo;
+  padding: 6%;
+  margin:5px;
+  margin:0 auto;
+}
+
+legend{
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+fieldset{
+  margin: 0 auto;
+  width: 80%;
+  padding: 2%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera"></div>
+        <div id="noticia_form">
+            <form action="mailto:evajg@gmail.com" method="POST" onsubmit="return validar()">
+                <fieldset>
+                    <legend id="legend">Registro</legend>
+                    <div id="contenedor_form">
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" class="campo" name="nombre" required size="20">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" class="campo" name="apellidos" required size="30" maxlength="20">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" class="campo" name="direccion" required size="60">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="edad">Edad:</label>
+                            <input type="number" id="edad" class="campo" name="edad" required size="5" maxlength="2" min="18" max="100">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="movil">Nº móvil:</label>
+                            <input type="text" id="movil" class="campo" name="movil" required size="15" maxlength="9">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="email">Email:</label>
+                            <input type="text" id="email" class="campo" name="email" required size="40" maxlength="30">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="pass">Contraseña:</label>
+                            <input type="password" id="pass1" class="campo" name="pass1" required size="40">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="pass">Repetir contraseña:</label>
+                            <input type="password" id="pass2" class="campo" name="pass2" required size="40">
+                        </div>
+        
+                        <div class="etiqueta_campo">
+                            <label class="etiqueta" for="recordar">Recordar</label>
+                            <input type="checkbox" id="chb_recordar" name="recordar">
+                        </div>
+        
+                        <div class="caja_botones">
+                            <input type="submit" class="boton" name="enviar">
+                        </div>
+        
+                        <div class="caja_botones">
+                            <input type="reset" class="boton" name="resetear">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="menu">
+            <a href="index.html" class="enlaces_menu">Inicio</a>
+            <a href="registro.html" class="enlaces_menu">Registro</a>
+            <a href="https://coleandmarmalade.com/2019/09/26/woman-saves-cat-from-streets-but-soon-finds-out-shes-brought-home-a-bobcat-kitten/" class="enlaces_menu" target="blank">Enlace a la noticia</a>
+        </div>
+        <div id="footer"> 
+            <p>Eva Jiménez Gómez - DAW ©2019. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
